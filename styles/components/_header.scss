@@ -17,7 +17,7 @@ header {
             a{
                 all: unset;
                 font-size: 35px;
-                font-family: "Roboto", sans-serif;
+                font-family: $roboto;
                 font-weight: bold;
                 letter-spacing: 1.75px;
                 color: #000;
@@ -47,14 +47,14 @@ header {
                 a{
                     all: unset;
                     font-size: 20px;
-                    font-family: "Noto Sans Georgian", sans-serif;
+                    font-family: $mrgvlovani;
                     font-weight: normal;
                     color: #000;
                     
                 }
 
                 .faq{
-                    font-family: "Roboto", sans-serif;
+                    font-family: $roboto;
                     letter-spacing: 1px;
                 }
             }

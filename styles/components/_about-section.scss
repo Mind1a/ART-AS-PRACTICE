@@ -37,7 +37,7 @@
             h1{
                 margin-bottom: 56px;
                 font-size: 40px;
-                font-family: "Noto Sans Georgian", sans-serif;
+                font-family: $mrgvlovani;
                 font-weight: normal;
                 text-align: center;
                 color: #000;
@@ -46,7 +46,7 @@
             p{
                 margin-bottom: 28px;
                 font-size: 16px;
-                font-family: "Noto Sans Georgian", sans-serif;
+                font-family: $mkhedruli;
                 font-weight: normal;
                 line-height: 1.5;
                 text-align: center;
@@ -56,20 +56,14 @@
             span{
                 margin-bottom: 58px;
                 font-size: 16px;
-                font-family: "Noto Sans Georgian", sans-serif;
+                font-family: $mkhedruli;
                 font-weight: bold;
                 text-align: center;
                 color: #000;
             }
 
             button{
-                padding: 13px 50px 12px 51px;
-                border: solid 1px #000;
-                background-color:transparent;
-                font-size: 16px;
-                font-family: "Noto Sans Georgian", sans-serif;
-                font-weight: normal;
-                color: #000;
+              @include button();
             }
         }
 
