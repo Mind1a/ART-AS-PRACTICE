@@ -1,0 +1,58 @@
+.mentor-section{
+    max-width: 100%;
+    background-color: $header-bg-color;
+    padding: 119px 18% 89px 11%;
+
+    .mentor-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .mentor-info{
+            margin-right: 103px;
+            display: flex;
+            flex-direction: column;
+            
+            h3{
+                margin-bottom: 56px;
+                font-size: 35px;
+                font-family:$mrgvlovani;
+                font-weight: normal;
+                color: #000;
+
+                span{
+                    font-size: 50px;
+                }
+            }
+
+            span{
+                margin-bottom: 28px;
+                font-size: 24px;
+                font-family: $mkhedruli;
+                font-weight: bold;
+                color: #000;
+            }
+
+            p{
+                margin-bottom: 56px;
+                font-size: 16px;
+                font-family: $mkhedruli;
+                font-weight: normal;
+                line-height: 1.5;
+                color: #000;
+            }
+
+            button{
+                width: 190px;
+                margin: 0 auto;
+                @include button();
+                white-space: nowrap;
+            }
+        }
+
+        img{
+            width: 314px;
+            height: 307px;
+        }
+    }
+}

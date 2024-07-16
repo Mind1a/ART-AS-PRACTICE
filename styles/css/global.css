@@ -280,13 +280,14 @@ header .header-container .burger-menu .line {
   color: #000;
 }
 .about-section .about-content .info-container button {
-  padding: 13px 50px 12px 51px;
-  border: solid 1px #000;
   background-color: transparent;
-  font-size: 16px;
-  font-family: "Noto Sans Georgian", sans-serif;
-  font-weight: normal;
   color: #000;
+  padding: 13px 50px 12px 51px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: normal;
+  border: solid 1px #000;
+  cursor: pointer;
 }
 .about-section .about-content .left-line {
   max-width: 1055px;
@@ -294,4 +295,112 @@ header .header-container .burger-menu .line {
   background-color: #000;
   margin-right: 17%;
   margin-top: 139px;
+}
+
+.second-section {
+  max-width: 100%;
+  padding: 114px 11% 140px;
+  background-color: #fff;
+}
+.second-section .title-wrapper {
+  width: 100%;
+  padding: 0 17%;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.second-section .title-wrapper p {
+  font-size: 35px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.second-section .info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.second-section .info-wrapper p {
+  font-size: 16px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #000;
+}
+.second-section .info-wrapper .horizontal-line {
+  width: 100%;
+  height: 1px;
+  margin: 27px 0 28px;
+  background-color: #000;
+}
+.second-section .info-wrapper .one {
+  grid-area: 2/1/2/3;
+}
+.second-section .info-wrapper .two {
+  grid-area: 4/1/4/3;
+}
+.second-section .info-wrapper .three {
+  grid-area: 6/1/6/3;
+}
+.second-section .info-wrapper .four {
+  grid-area: 8/1/8/3;
+}
+
+.mentor-section {
+  max-width: 100%;
+  background-color: #fff2f5;
+  padding: 119px 18% 89px 11%;
+}
+.mentor-section .mentor-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mentor-section .mentor-content .mentor-info {
+  margin-right: 103px;
+  display: flex;
+  flex-direction: column;
+}
+.mentor-section .mentor-content .mentor-info h3 {
+  margin-bottom: 56px;
+  font-size: 35px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.mentor-section .mentor-content .mentor-info h3 span {
+  font-size: 50px;
+}
+.mentor-section .mentor-content .mentor-info span {
+  margin-bottom: 28px;
+  font-size: 24px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+.mentor-section .mentor-content .mentor-info p {
+  margin-bottom: 56px;
+  font-size: 16px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #000;
+}
+.mentor-section .mentor-content .mentor-info button {
+  width: 190px;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #000;
+  padding: 13px 50px 12px 51px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: normal;
+  border: solid 1px #000;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.mentor-section .mentor-content img {
+  width: 314px;
+  height: 307px;
 }/*# sourceMappingURL=global.css.map */
