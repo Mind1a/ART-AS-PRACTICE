@@ -403,4 +403,98 @@ header .header-container .burger-menu .line {
 .mentor-section .mentor-content img {
   width: 314px;
   height: 307px;
+}
+
+.fourth-section {
+  max-width: 100%;
+  padding: 114px 11% 139px;
+  background-color: #fff;
+}
+.fourth-section .fourth-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourth-section .fourth-content h3 {
+  margin-bottom: 114px;
+  font-size: 35px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.fourth-section .fourth-content .content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 1020px) {
+  .fourth-section .fourth-content .content-wrapper {
+    flex-direction: column;
+  }
+}
+.fourth-section .fourth-content .content-wrapper .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff2f5;
+}
+.fourth-section .fourth-content .content-wrapper .box .rect-pic {
+  width: 288px;
+  height: 356px;
+  margin: 0 26px 0 0;
+}
+.fourth-section .fourth-content .content-wrapper .box .round-pic {
+  width: 59px;
+  height: 59px;
+  margin: 269px 33px 28px 38px;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 0 0;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content p {
+  margin-bottom: 48px;
+  font-size: 14px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #000;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content .name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content .name-container h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content .name-container span {
+  font-size: 14px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #000;
+}
+.fourth-section .fourth-content .content-wrapper .first {
+  width: 577px;
+  margin-right: 18px;
+}
+@media only screen and (max-width: 1020px) {
+  .fourth-section .fourth-content .content-wrapper .first {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+.fourth-section .fourth-content .content-wrapper .second {
+  width: 405px;
+}
+@media only screen and (max-width: 1020px) {
+  .fourth-section .fourth-content .content-wrapper .second {
+    width: 100%;
+  }
 }/*# sourceMappingURL=global.css.map */
