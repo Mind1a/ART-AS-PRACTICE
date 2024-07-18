@@ -4,6 +4,7 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 *,
 *::before,
 *::after {
@@ -497,4 +498,96 @@ header .header-container .burger-menu .line {
   .fourth-section .fourth-content .content-wrapper .second {
     width: 100%;
   }
+}
+
+footer {
+  max-width: 100%;
+  background-color: #fff2f5;
+}
+footer .footer-container {
+  width: 100%;
+  padding: 34px 11% 46px;
+}
+footer .footer-container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-container ul {
+    flex-direction: column;
+  }
+}
+footer .footer-container ul li {
+  margin-right: 54px;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-container ul li {
+    margin: 0 0 10px;
+  }
+}
+footer .footer-container ul li:last-child {
+  margin: 0;
+}
+footer .footer-container ul li a {
+  all: unset;
+  font-size: 12px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+footer .footer-container ul li .faq {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+}
+footer .footer-container ul li .eng {
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+footer .footer-container .line {
+  width: 100%;
+  height: 1px;
+  margin: 30px 0 29px;
+  background-color: #000;
+}
+footer .footer-container .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-container .contact {
+    flex-direction: column;
+  }
+}
+footer .footer-container .contact p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  color: #000;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-container .contact p {
+    order: 1;
+    margin-top: 10px;
+  }
+}
+footer .footer-container .contact .socmedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footer-container .contact .socmedia a {
+  margin: 0 20px 0 0;
+}
+footer .footer-container .contact .socmedia a:last-child {
+  margin: 0;
+}
+footer .footer-container .contact .socmedia a img {
+  width: 29px;
+  height: 29px;
 }/*# sourceMappingURL=global.css.map */
