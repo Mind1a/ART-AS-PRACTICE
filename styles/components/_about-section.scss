@@ -1,78 +1,76 @@
+.about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $header-bg-color;
 
+  .img-container {
+    max-width: 100%;
+    max-height: 693px;
 
-.about-section{
+    img {
+      width: 100%;
+      max-height: 693px;
+      object-fit: cover;
+    }
+  }
 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: $header-bg-color;
+  .about-content {
+    padding: 110px 0 113px;
 
-    .img-container{
-        max-width: 100%;
-        max-height: 693px;
-
-        img{
-            width: 100%;
-            height: 100%;
-        }
+    .rigth-line {
+      max-width: 100%;
+      height: 1px;
+      background-color: #000;
+      margin-left: 17%;
+      margin-bottom: 112px;
     }
 
-    .about-content{
-        padding: 110px 0 113px;
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 17%;
 
-        .rigth-line{
-            max-width: 100%;
-            height: 1px;
-            background-color: #000;
-            margin-left: 17%;
-            margin-bottom: 112px;
-        }
+      h1 {
+        margin-bottom: 56px;
+        font-size: 40px;
+        font-family: $mrgvlovani;
+        font-weight: normal;
+        text-align: center;
+        color: #000;
+      }
 
-        .info-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0 17%;
+      p {
+        margin-bottom: 28px;
+        font-size: 16px;
+        font-family: $mkhedruli;
+        font-weight: normal;
+        line-height: 1.5;
+        text-align: center;
+        color: #000;
+      }
 
-            h1{
-                margin-bottom: 56px;
-                font-size: 40px;
-                font-family: $mrgvlovani;
-                font-weight: normal;
-                text-align: center;
-                color: #000;
-            }
+      span {
+        margin-bottom: 58px;
+        font-size: 16px;
+        font-family: $mkhedruli;
+        font-weight: bold;
+        text-align: center;
+        color: #000;
+      }
 
-            p{
-                margin-bottom: 28px;
-                font-size: 16px;
-                font-family: $mkhedruli;
-                font-weight: normal;
-                line-height: 1.5;
-                text-align: center;
-                color: #000;
-            }
-
-            span{
-                margin-bottom: 58px;
-                font-size: 16px;
-                font-family: $mkhedruli;
-                font-weight: bold;
-                text-align: center;
-                color: #000;
-            }
-
-            button{
-              @include button();
-            }
-        }
-
-        .left-line{
-                max-width: 1055px;
-                height: 1px;
-                background-color: #000;
-                margin-right: 17%;
-                margin-top: 139px;
-        }
+      button {
+        @include button();
+      }
     }
+
+    .left-line {
+      max-width: 1055px;
+      height: 1px;
+      background-color: #000;
+      margin-right: 17%;
+      margin-top: 139px;
+    }
+  }
 }
