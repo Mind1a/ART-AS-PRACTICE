@@ -4,7 +4,9 @@ footer {
 
   .footer-container {
     width: 100%;
-    padding: 34px 140px 46px;
+    max-width: 1000px;
+    padding: 34px 0 46px;
+    margin: 0 auto;
 
     ul {
       display: flex;
