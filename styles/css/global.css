@@ -4,6 +4,7 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 *,
 *::before,
 *::after {
@@ -117,6 +118,18 @@ section {
   display: block;
 }
 
+body,
+html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  background: white;
+}
+
 body {
   line-height: 1;
   font-family: "Work Sans", sans-serif;
@@ -156,11 +169,21 @@ header {
 }
 header .header-container {
   width: 100%;
-  padding: 28px 140px 18px;
+  max-width: 1000px;
+  padding: 28px 0 18px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1020px) {
+  header .header-container {
+    padding: 28px 20px 18px;
+  }
+}
+header .header-container .logo {
+  cursor: pointer;
 }
 header .header-container .logo a {
   all: unset;
@@ -187,6 +210,7 @@ header .header-container ul {
 }
 header .header-container ul li {
   margin-right: 54px;
+  cursor: pointer;
 }
 header .header-container ul li:last-child {
   margin: 0;
@@ -222,4 +246,465 @@ header .header-container .burger-menu .line {
   height: 2.5px;
   border-radius: 2px;
   background-color: #000;
+}
+
+.about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff2f5;
+}
+.about-section .img-container {
+  max-width: 100%;
+  max-height: 300px;
+}
+.about-section .img-container img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-section .about-content {
+  padding: 110px 0 113px;
+}
+.about-section .about-content .rigth-line {
+  max-width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin-left: 17%;
+  margin-bottom: 112px;
+}
+.about-section .about-content .info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.about-section .about-content .info-container h1 {
+  margin-bottom: 56px;
+  font-size: 40px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #000;
+}
+.about-section .about-content .info-container p {
+  margin-bottom: 28px;
+  font-size: 16px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+}
+.about-section .about-content .info-container span {
+  margin-bottom: 58px;
+  font-size: 16px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+.about-section .about-content .info-container button {
+  background-color: transparent;
+  color: #000;
+  padding: 13px 50px 12px 51px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: normal;
+  border: solid 1px #000;
+  cursor: pointer;
+}
+.about-section .about-content .left-line {
+  height: 1px;
+  background-color: #000;
+  margin-right: 17%;
+  margin-top: 139px;
+}
+
+.second-section {
+  padding: 114px 0 140px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.second-section .title-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.second-section .title-wrapper p {
+  font-size: 35px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.second-section .title-wrapper .title-wrapper-first {
+  margin-right: 338px;
+}
+.second-section .info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.second-section .info-wrapper p {
+  font-size: 16px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #000;
+}
+.second-section .info-wrapper .horizontal-line {
+  width: 100%;
+  height: 1px;
+  margin: 27px 0 28px;
+  background-color: #000;
+}
+.second-section .info-wrapper .one {
+  grid-area: 2/1/2/3;
+}
+.second-section .info-wrapper .two {
+  grid-area: 4/1/4/3;
+}
+.second-section .info-wrapper .three {
+  grid-area: 6/1/6/3;
+}
+.second-section .info-wrapper .four {
+  grid-area: 8/1/8/3;
+}
+
+.mentor-section {
+  max-width: 100%;
+  background-color: #fff2f5;
+  padding: 119px 0 89px;
+}
+.mentor-section .mentor-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.mentor-section .mentor-content .mentor-info {
+  margin-right: 103px;
+  display: flex;
+  flex-direction: column;
+}
+.mentor-section .mentor-content .mentor-info h3 {
+  margin-bottom: 56px;
+  font-size: 35px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.mentor-section .mentor-content .mentor-info h3 span {
+  font-size: 50px;
+}
+.mentor-section .mentor-content .mentor-info span {
+  margin-bottom: 28px;
+  font-size: 24px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+.mentor-section .mentor-content .mentor-info p {
+  margin-bottom: 56px;
+  font-size: 16px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #000;
+}
+.mentor-section .mentor-content .mentor-info button {
+  width: 190px;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #000;
+  padding: 13px 50px 12px 51px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: normal;
+  border: solid 1px #000;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.mentor-section .mentor-content img {
+  width: 314px;
+  height: 307px;
+}
+
+.fourth-section {
+  max-width: 100%;
+  padding: 114px 11% 139px;
+  background-color: #fff;
+}
+.fourth-section .fourth-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourth-section .fourth-content h3 {
+  margin-bottom: 114px;
+  font-size: 35px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.fourth-section .fourth-content .content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 1020px) {
+  .fourth-section .fourth-content .content-wrapper {
+    flex-direction: column;
+  }
+}
+.fourth-section .fourth-content .content-wrapper .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff2f5;
+}
+.fourth-section .fourth-content .content-wrapper .box .rect-pic {
+  width: 288px;
+  height: 356px;
+  margin: 0 26px 0 0;
+}
+.fourth-section .fourth-content .content-wrapper .box .round-pic {
+  width: 59px;
+  height: 59px;
+  margin: 269px 33px 28px 38px;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 0 0;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content p {
+  margin-bottom: 48px;
+  font-size: 14px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #000;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content .name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content .name-container h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.fourth-section .fourth-content .content-wrapper .box .box-content .name-container span {
+  font-size: 14px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #000;
+}
+.fourth-section .fourth-content .content-wrapper .first {
+  width: 577px;
+  margin-right: 18px;
+}
+@media only screen and (max-width: 1020px) {
+  .fourth-section .fourth-content .content-wrapper .first {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+.fourth-section .fourth-content .content-wrapper .second {
+  width: 405px;
+}
+@media only screen and (max-width: 1020px) {
+  .fourth-section .fourth-content .content-wrapper .second {
+    width: 100%;
+  }
+}
+
+footer {
+  max-width: 100%;
+  background-color: #fff2f5;
+}
+footer .footer-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 34px 0 46px;
+  margin: 0 auto;
+}
+footer .footer-container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-container ul {
+    flex-direction: column;
+  }
+}
+footer .footer-container ul li {
+  margin-right: 54px;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-container ul li {
+    margin: 0 0 10px;
+  }
+}
+footer .footer-container ul li:last-child {
+  margin: 0;
+}
+footer .footer-container ul li a {
+  all: unset;
+  font-size: 12px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+footer .footer-container ul li .faq {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+}
+footer .footer-container ul li .eng {
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+footer .footer-container .line {
+  width: 100%;
+  height: 1px;
+  margin: 30px 0 29px;
+  background-color: #000;
+}
+footer .footer-container .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-container .contact {
+    flex-direction: column;
+  }
+}
+footer .footer-container .contact p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  color: #000;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-container .contact p {
+    order: 1;
+    margin-top: 10px;
+  }
+}
+footer .footer-container .contact .socmedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footer-container .contact .socmedia a {
+  margin: 0 20px 0 0;
+}
+footer .footer-container .contact .socmedia a:last-child {
+  margin: 0;
+}
+footer .footer-container .contact .socmedia a img {
+  width: 29px;
+  height: 29px;
+}
+
+main .registration-info {
+  background: white;
+  width: 100%;
+  padding: 112px 0 56px;
+}
+main .registration-info .registration-info-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main .registration-info .registration-info-wrapper h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 54.57px;
+  margin-bottom: 56px;
+}
+main .registration-info .registration-info-wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+main .registration-section {
+  width: 100%;
+  padding: 69px 0 80px;
+  background-color: #fff2f5;
+}
+main .registration-section form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main .registration-section form div {
+  display: flex;
+  flex-direction: column;
+}
+main .registration-section form div label,
+main .registration-section form div p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 5px;
+}
+main .registration-section form div input,
+main .registration-section form div textarea {
+  width: 100%;
+  height: 43px;
+  border: none;
+  margin: 5px 0;
+  padding: 0 10px;
+}
+main .registration-section form div input:focus,
+main .registration-section form div textarea:focus {
+  outline: none;
+}
+main .registration-section form div textarea {
+  height: 122px;
+  resize: none;
+  padding: 10px;
+  font-family: inherit;
+}
+main .registration-section form div p {
+  color: red;
+  font-weight: bold;
+  visibility: hidden;
+}
+main .registration-section form div:not(:last-child) {
+  margin-bottom: 16px;
+}
+main .registration-section form .registration-button-div {
+  margin-top: 40px;
+}
+main .registration-section form .registration-button-div .registration-button {
+  width: 190px;
+  height: 43px;
+  margin: 0 auto;
+  background-color: transparent;
+  font-size: 16px;
+}
+main .gap {
+  height: 311px;
+  background: white;
 }/*# sourceMappingURL=global.css.map */
