@@ -118,6 +118,18 @@ section {
   display: block;
 }
 
+body,
+html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  background: white;
+}
+
 body {
   line-height: 1;
   font-family: "Work Sans", sans-serif;
@@ -157,11 +169,21 @@ header {
 }
 header .header-container {
   width: 100%;
-  padding: 28px 140px 18px;
+  max-width: 1000px;
+  padding: 28px 0 18px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1020px) {
+  header .header-container {
+    padding: 28px 20px 18px;
+  }
+}
+header .header-container .logo {
+  cursor: pointer;
 }
 header .header-container .logo a {
   all: unset;
@@ -234,11 +256,11 @@ header .header-container .burger-menu .line {
 }
 .about-section .img-container {
   max-width: 100%;
-  max-height: 693px;
+  max-height: 300px;
 }
 .about-section .img-container img {
   width: 100%;
-  max-height: 693px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -256,7 +278,8 @@ header .header-container .burger-menu .line {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 17%;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 .about-section .about-content .info-container h1 {
   margin-bottom: 56px;
@@ -294,7 +317,6 @@ header .header-container .burger-menu .line {
   cursor: pointer;
 }
 .about-section .about-content .left-line {
-  max-width: 1055px;
   height: 1px;
   background-color: #000;
   margin-right: 17%;
@@ -302,18 +324,19 @@ header .header-container .burger-menu .line {
 }
 
 .second-section {
-  max-width: 100%;
-  padding: 114px 11% 140px;
+  padding: 114px 0 140px;
+  margin: 0 auto;
   background-color: #fff;
 }
 .second-section .title-wrapper {
   width: 100%;
-  padding: 0 17%;
+  max-width: 1000px;
+  margin: 0 auto;
   margin-bottom: 56px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .second-section .title-wrapper p {
   font-size: 35px;
@@ -321,9 +344,15 @@ header .header-container .burger-menu .line {
   font-weight: normal;
   color: #000;
 }
+.second-section .title-wrapper .title-wrapper-first {
+  margin-right: 338px;
+}
 .second-section .info-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .second-section .info-wrapper p {
   font-size: 16px;
@@ -354,12 +383,14 @@ header .header-container .burger-menu .line {
 .mentor-section {
   max-width: 100%;
   background-color: #fff2f5;
-  padding: 119px 18% 89px 11%;
+  padding: 119px 0 89px;
 }
 .mentor-section .mentor-content {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .mentor-section .mentor-content .mentor-info {
   margin-right: 103px;
@@ -509,7 +540,9 @@ footer {
 }
 footer .footer-container {
   width: 100%;
-  padding: 34px 140px 46px;
+  max-width: 1000px;
+  padding: 34px 0 46px;
+  margin: 0 auto;
 }
 footer .footer-container ul {
   display: flex;
@@ -596,75 +629,82 @@ footer .footer-container .contact .socmedia a img {
 }
 
 main .registration-info {
+  background: white;
   width: 100%;
-  margin-top: 112px;
-  padding: 0 140px;
+  padding: 112px 0 56px;
 }
-main .registration-info h1 {
+main .registration-info .registration-info-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main .registration-info .registration-info-wrapper h1 {
   font-size: 40px;
   font-weight: 400;
   line-height: 54.57px;
   margin-bottom: 56px;
 }
-main .registration-info p {
+main .registration-info .registration-info-wrapper p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
-main form {
+main .registration-section {
   width: 100%;
-  margin-top: 56px;
-  padding: 69px 140px 80px;
+  padding: 69px 0 80px;
   background-color: #fff2f5;
 }
-main form div {
+main .registration-section form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main .registration-section form div {
   display: flex;
   flex-direction: column;
 }
-main form div label,
-main form div p {
+main .registration-section form div label,
+main .registration-section form div p {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   margin-left: 5px;
 }
-main form div input,
-main form div textarea {
+main .registration-section form div input,
+main .registration-section form div textarea {
   width: 100%;
   height: 43px;
   border: none;
   margin: 5px 0;
   padding: 0 10px;
 }
-main form div input:focus,
-main form div textarea:focus {
+main .registration-section form div input:focus,
+main .registration-section form div textarea:focus {
   outline: none;
 }
-main form div textarea {
+main .registration-section form div textarea {
   height: 122px;
   resize: none;
   padding: 10px;
   font-family: inherit;
 }
-main form div p {
+main .registration-section form div p {
   color: red;
   font-weight: bold;
   visibility: hidden;
 }
-main form div:not(:last-child) {
+main .registration-section form div:not(:last-child) {
   margin-bottom: 16px;
 }
-main form .registration-button-div {
+main .registration-section form .registration-button-div {
   margin-top: 40px;
 }
-main form .registration-button-div .registration-button {
+main .registration-section form .registration-button-div .registration-button {
   width: 190px;
   height: 43px;
   margin: 0 auto;
   background-color: transparent;
   font-size: 16px;
 }
-
-footer {
-  margin-top: 311px;
+main .gap {
+  height: 311px;
+  background: white;
 }/*# sourceMappingURL=global.css.map */
